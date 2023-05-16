@@ -1,0 +1,180 @@
+/* Criando Variáveis do Arquivo */
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --Bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+
+    --fonte-principal: 'Red Hat Display', sans-serif;
+}
+
+/* Estilos Gerais */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100%;
+    width: 100%;
+}
+
+/* Main */
+
+.fundo{
+    
+}
+
+.fundo .background{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--pale-blue);
+     
+}
+
+/* div container */
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 450px;
+    margin: 0 auto;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+} 
+
+/* picture */
+
+picture img{
+    width: 450px;
+    border-radius: 8px 8px 0 0;
+    
+}
+
+/* section */
+
+.sumario{
+    
+    border-radius: 0 0 8px 8px;
+    background-color: var(--very-pale-blue);
+    padding: 2rem;
+}
+
+.sumario h1{
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem;
+} 
+
+.sumario p{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    opacity: 0.6;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    color: var(--desaturated-blue);
+}
+
+.plano{
+    display: flex;
+    flex-direction: row;
+    padding: 4.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.plano__anual{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;    
+}
+
+.plano__anual img{
+    
+    height: 2.7rem;
+}
+
+.plano__anual-preco{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+}
+
+.plano__anual-preco p{
+    margin: 0;
+    padding-top: 0.3rem;
+}
+
+.mudar{
+    display: flex;
+    padding-bottom: 1.3rem;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+}
+
+.ordem{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.ordem__pagamento{
+    background-color: var(--Bright-blue);
+    padding: 1rem;
+    border-radius:1rem;
+    color: var(--very-pale-blue);
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 20px;    
+    border: none;
+    transition: 1s;
+}
+
+.ordem__pagamento:hover{
+    transform: scale(1);
+    background-color: var(--desaturated-blue);
+    color: var(--Bright-blue);
+    opacity: 0.8;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.ordem__cancelar{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
