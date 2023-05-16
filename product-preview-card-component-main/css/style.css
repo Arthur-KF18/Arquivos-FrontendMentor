@@ -1,0 +1,145 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --fonte-titulo: 'Fraunces', serif;
+    --fonte-conteudo: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60vh;
+    width: 40vw;
+    justify-content: center;
+    padding: 30%;
+}
+
+.container__conteudo {
+    background-color: var(--White);
+    padding: 1.5em;
+    border-radius: 0 0.8em 0.8em 0;
+}
+
+.container__conteudo-titulo {
+    font-family: var(--fonte-conteudo);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    opacity: 0.5;
+    padding: 0 0 0.5em;
+    text-transform: uppercase;
+}
+
+.container__conteudo-principal {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+.container__conteudo-texto {
+    font-family: var(--fonte-conteudo);
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    padding-top: 1.2em;
+    padding-bottom: 0.8em;
+}
+
+.container__produtos {
+    display: flex;
+    flex-direction: row;
+    padding: 0.9em 0;
+    align-items: center;
+}
+
+.container__produtos-preco {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
+    padding-right: 0.3em;
+    color: var(--Dark-cyan);
+}
+
+.container__produtos-preco2 {
+    font-family: var(--fonte-titulo);
+    font-size: 0.7em;
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.container__botao {
+    display: flex;
+    padding: 3em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__botao-conteudo {
+    font-family: var(--fonte-conteudo);
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    padding: 0.8em 4.2em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.imagem__container {
+    display: flex;
+}
+
+.imagem__container-conteudo {
+    border-radius: 0.8em 0 0 0.8em;
+}
+
+
+@media (max-width: 1400px) {
+    .container__botao {
+        display: flex;
+        padding: 0.8em 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__botao-conteudo {
+        font-family: var(--fonte-conteudo);
+        text-decoration: none;
+        color: var(--White);
+        background-color: var(--Dark-cyan);
+        padding: 0.8em 1.5em;
+        border-radius: 0.5em;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
