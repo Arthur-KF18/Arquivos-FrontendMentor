@@ -1,0 +1,247 @@
+/* Variáveis */
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --fonte-principal: 'Big Shoulders Display', cursive;
+    --fonte-secundária: 'Lexend Deca', sans-serif;
+}
+
+* {
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container sedans */
+
+.container__sedans {
+    background-color: var(--Bright-orange);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 150px;
+    height: 300px;
+    border-radius: 8px 0 0 8px;
+}
+
+.container__sedans-carro {
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 3rem;
+}
+
+.container__sedans-descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao__sedans {
+    font-size: 1.7rem;
+    font-family: var(--fonte-principal);
+    padding: 1.5rem 0 1rem 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.descricao__sedans-conteudo {
+    font-size: 0.6rem;
+    font-family: var(--fonte-secundária);
+    color: #FFFFFF;
+    padding: 0.8rem 0 2rem 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.container__sedans-descricao a {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    padding: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.descricao__sedans-saber-mais {
+    width: 70px;
+    font-size: 0.7rem;
+    height: 8px;
+    border-radius: 50px;
+    font-family: var(--fonte-secundária);
+    text-decoration: none;
+    color: var(--Bright-orange);
+    padding: 4rem 0 1rem 1rem;
+    transition: 1s;
+}
+
+.descricao__sedans-saber-mais:hover {
+    border: 1px solid #FFFFFF;
+    background-color: var(--Bright-orange);
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+/* container suvs */
+
+.container__suvs {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 150px;
+    height: 300px;
+}
+
+.container__suvs-carro {
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 3rem;
+}
+
+.container__suvs-descricao {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.descricao__suvs {
+    font-size: 1.7rem;
+    font-family: var(--fonte-principal);
+    padding: 1.5rem 0 1rem 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.descricao__suvs-conteudo {
+    font-size: 0.6rem;
+    font-family: var(--fonte-secundária);
+    color: #FFFFFF;
+    padding: 0.8rem 0 2rem 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.container__suvs-descricao a {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    padding: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.descricao__suvs-saber-mais {
+
+    width: 70px;
+    font-size: 0.7rem;
+    height: 8px;
+    border-radius: 50px;
+    font-family: var(--fonte-secundária);
+    text-decoration: none;
+    color: var(--Dark-cyan);
+    padding: 4rem 0 1rem 1rem;
+    transition: 1s;
+}
+
+.descricao__suvs-saber-mais:hover {
+    border: 1px solid #FFFFFF;
+    background-color: var(--Dark-cyan);
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+/* container luxury */
+
+.container__luxury {
+    background-color: var(--Very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 150px;
+    height: 300px;
+    border-radius: 0 8px 8px 0;
+}
+
+.container__luxury-carro {
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 3rem;
+}
+
+.container__luxury-descricao {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.descricao__luxury {
+    font-size: 1.7rem;
+    font-family: var(--fonte-principal);
+    padding: 1.5rem 0 1rem 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.descricao__luxury-conteudo {
+    font-size: 0.6rem;
+    font-family: var(--fonte-secundária);
+    color: #FFFFFF;
+    padding: 0.8rem 0 2rem 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.container__luxury-descricao a {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    padding: 0.8rem;
+    background-color: #FFFFFF;
+}
+
+.descricao__luxury-saber-mais {
+    width: 70px;
+    font-size: 0.7rem;
+    height: 8px;
+    border-radius: 50px;
+    font-family: var(--fonte-secundária);
+    text-decoration: none;
+    color: var(--Very-dark-cyan);
+    padding: 4rem 0 1rem 1rem;
+    transition: 1s;
+}
+
+.descricao__luxury-saber-mais:hover {
+    border: 1px solid #FFFFFF;
+    background-color: var(--Very-dark-cyan);
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
